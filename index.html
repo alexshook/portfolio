@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Alexandra Shook</title>
+	<title>Alex Shook | Jamming with the console cowboys in cyberspace since 1998</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -16,15 +16,26 @@
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<!-- Scripts
+	================================================== -->
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 	<!-- CSS
   ================================================== -->
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
 
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+
+	<!-- JS
+	================================================== -->
+	<script src="javascripts/index.js" type="text/javascript"></script>
 
 	<!-- Favicons
 	================================================== -->
@@ -33,41 +44,118 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
+	<!-- Font
+	================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 
-
-
 	<!-- Primary Page Layout
 	================================================== -->
+<div class="navbar">
+	<div class="nav-left">
+		<h2 id="name"><a href="#">Alex Shook</a></h2>
+	</div>
+	<div class="nav-right" align="right">
+		<ul>
+			<li id="nav-about"><a href="#about">About</a></li>
+			<li id="nav-projects"><a href="#projects">Projects</a></li>
+			<!-- <li><a href="#skills">Skills</a></li> -->
+			<li id="nav-contact"><a href="#contact">Contact</a></li>
+			<li><a href="https://github.com/alexshook" target="_blank">Github</a></li>
+			<li><a href="https://drive.google.com/file/d/0B09tb1tEocPINlpORXRvcTZNazg/edit?usp=sharing" target="_blank">CV</a></li>
+			<li><a href="http://delayedmissives.com/" target="_blank">Blog</a></li>
+		</ul>
+	</div>
+</div> <!-- end navbar -->
+<div class="navbar-mobile">
+		<ul>
+			<li id="name"><a href="#">Alex Shook</a> ::</li>
+			<li id="nav-about"><a href="#about">About</a></li>
+			<li id="nav-projects"><a href="#projects">Projects</a></li>
+			<!-- <li><a href="#skills">Skills</a></li> -->
+			<li id="nav-contact"><a href="#contact">Contact</a></li>
+			<li><a href="https://github.com/alexshook" target="_blank">Github</a></li>
+			<li><a href="https://drive.google.com/file/d/0B09tb1tEocPINlpORXRvcTZNazg/edit?usp=sharing" target="_blank">CV</a></li>
+			<li><a href="http://delayedmissives.com/" target="_blank">Blog</a></li>
+		</ul>
+</div>
 
-	<!-- Delete everything in this .container and get started on your own site! -->
-
+	<div class="jumbotron">
+	</div>
 	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Alexandra Shook</h1>
-			<hr />
-		</div>
-		<div class="one-third column">
-			<h3>About Skeleton?</h3>
-			<p>Skeleton is a small collection of well-organized CSS files that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone. It's based on a responsive grid, but also provides very basic CSS for typography, buttons, forms and media queries. Go ahead, resize this super basic page to see the grid in action.</p>
-		</div>
-		<div class="one-third column">
-			<h3>Three Core Principles</h3>
-			<p>Skeleton is built on three core principles:</p>
-			<ul class="square">
-				<li><strong>A Responsive Grid Down To Mobile</strong>: Elegant scaling from a browser to tablets to mobile.</li>
-				<li><strong>Fast to Start</strong>: It's a tool for rapid development with best practices</li>
-				<li><strong>Style Agnostic</strong>: It provides the most basic, beautiful styles, but is meant to be overwritten.</li>
-			</ul>
-		</div>
-		<div class="one-third column">
-			<h3>Docs &amp; Support</h3>
-			<p>The easiest way to really get started with Skeleton is to check out the full docs and info at <a href="http://www.getskeleton.com">www.getskeleton.com.</a>. Skeleton is also open-source and has a <a href="https://github.com/dhgamache/skeleton">project on git</a>, so check that out if you want to report bugs or create a pull request. If you have any questions, thoughts, concerns or feedback, please don't hesitate to email me at <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.</p>
-		</div>
+		<div id="about">
+			<div class="intro one-third column">
+				<div class="headshot-wrapper">
+					<img class="headshot" src="https://farm3.staticflickr.com/2934/14299192392_ddb40a7735_m.jpg">
+				</div>
+			</div>
+			<div class="intro two-thirds column">
+				<h2>Hello! I'm Alex.</h2>
+					<div class="info">
+						<h3>I am a full-stack web developer working with Ruby, Rails, JavaScript and Backbone.</h3>
+					</div>
+			</div>
+			<div class="info sixteen columns">
+				<p>Before I made web applications, I worked on the eCommerce and digital sides of fashion PR. I've loved the web since building my first single-page site on my Gateway 2000.</p>
+
+				<p>Some other things I like are coffee, pad kee mao, vintage jewelry, photography, travel and yoga.</p>
+			</div>
+		</div><!-- end about -->
+
+		<div id="projects" class="sixteen columns offset">
+			<div class="sixteen columns">
+				<h2 class="remove-bottom space">Projects</h1>
+				<hr />
+			</div>
+			<div class="sixteen columns">
+				<h3><a href="http://photidian.herokuapp.com/">Photidian</a> <a href="https://github.com/alexshook/photidian"><i class="fa fa-github"></i></a></h3>
+				<p>Steamed saucer, irish café au lait carajillo to go fair trade ristretto in rich. Beans est rich, mocha, turkish single origin carajillo café au lait extra aged caffeine whipped.</p>
+				<p>Decaffeinated shop macchiato crema aromatic kopi-luwak rich siphon arabica. Whipped, sit a affogato, ristretto qui cultivar ut strong.</p>
+				<p>Est a acerbic robust french press café au lait et frappuccino grounds cappuccino. Est single shot caramelization froth sweet espresso aromatic single shot organic java single origin.</p>
+				<p>Iced est, extra latte plunger pot cup chicory. Single shot id iced, trifecta, arabica breve grinder, bar café au lait dripper that saucer.</p>
+			</div>
+			<div class="sixteen columns">
+				<h3><a href="http://giftlistr.herokuapp.com/">Giftlistr</a> <a href="https://github.com/alexshook/giftlistr"><i class="fa fa-github"></i></a></h3>
+				<p>Steamed saucer, irish café au lait carajillo to go fair trade ristretto in rich. Beans est rich, mocha, turkish single origin carajillo café au lait extra aged caffeine whipped.</p>
+				<p>Decaffeinated shop macchiato crema aromatic kopi-luwak rich siphon arabica. Whipped, sit a affogato, ristretto qui cultivar ut strong.</p>
+				<p>Est a acerbic robust french press café au lait et frappuccino grounds cappuccino. Est single shot caramelization froth sweet espresso aromatic single shot organic java single origin.</p>
+				<p>Iced est, extra latte plunger pot cup chicory. Single shot id iced, trifecta, arabica breve grinder, bar café au lait dripper that saucer.</p>
+			</div>
+			<div class="sixteen columns">
+				<h3><a href="http://secure-bastion-8498.herokuapp.com/">SocialLight</a> <a href="https://github.com/trinityXmontoya/project_2"><i class="fa fa-github"></i></a></h3>
+				<p>Steamed saucer, irish café au lait carajillo to go fair trade ristretto in rich. Beans est rich, mocha, turkish single origin carajillo café au lait extra aged caffeine whipped.</p>
+				<p>Decaffeinated shop macchiato crema aromatic kopi-luwak rich siphon arabica. Whipped, sit a affogato, ristretto qui cultivar ut strong.</p>
+				<p>Est a acerbic robust french press café au lait et frappuccino grounds cappuccino. Est single shot caramelization froth sweet espresso aromatic single shot organic java single origin.</p>
+				<p>Iced est, extra latte plunger pot cup chicory. Single shot id iced, trifecta, arabica breve grinder, bar café au lait dripper that saucer.</p>
+			</div>
+			<div class="sixteen columns">
+				<h3><a href="http://www.retourist.com/">Retourist</a></h3>
+				<h5><a href="https://github.com/alexshook/retourist">on GitHub</a></h5>
+				<p>Steamed saucer, irish café au lait carajillo to go fair trade ristretto in rich. Beans est rich, mocha, turkish single origin carajillo café au lait extra aged caffeine whipped.</p>
+				<p>Decaffeinated shop macchiato crema aromatic kopi-luwak rich siphon arabica. Whipped, sit a affogato, ristretto qui cultivar ut strong.</p>
+				<p>Est a acerbic robust french press café au lait et frappuccino grounds cappuccino. Est single shot caramelization froth sweet espresso aromatic single shot organic java single origin.</p>
+				<p>Iced est, extra latte plunger pot cup chicory. Single shot id iced, trifecta, arabica breve grinder, bar café au lait dripper that saucer.</p>
+			</div>
+		</div><!-- end projects -->
+
+		<div id="contact" class="sixteen columns offset">
+			<div class="sixteen columns">
+				<h2 class="remove-bottom space">Contact</h1>
+				<hr />
+			</div>
+			<div class="contact-info">
+				<p><i class="fa fa-envelope-o"></i> <a href="mailto:alexandra.shook@gmail.com">alexandra.shook@gmail.com</a>
+				</p>
+				<p><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/alexshook" target="_blank">LinkedIn</a></p>
+
+				<p><i class="fa fa-twitter"></i> <a href="https://twitter.com/alexshook">Twitter</a></p>
+			</div>
+		<div class="offset"></div>
+		</div><!-- end contact -->
 
 	</div><!-- container -->
-
 
 <!-- End Document
 ================================================== -->
