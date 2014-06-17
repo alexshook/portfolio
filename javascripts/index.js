@@ -1,5 +1,18 @@
 $().ready(function() {
 
+ $(window).bind('scroll', function() {
+   var navHeight = $(window).height() - 250;
+     if ($(window).scrollTop() > navHeight) {
+       $('.nav').addClass('fixed');
+       $('.nav').removeClass('nav-opacity');
+     }
+     else {
+       $('.nav').removeClass('fixed');
+       $('.nav').addClass('nav-opacity');
+
+     }
+  });
+
   $('#name').click(function(e) {
     e.preventDefault();
     $('html, body').animate({
