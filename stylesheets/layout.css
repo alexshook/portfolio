@@ -24,6 +24,10 @@ body h1, h2, h3, h4, h5, h6, div, p, li {
   font-family: 'Georgia', serif;
 }
 
+body {
+	background: url('https://www.flickr.com/photos/als304/14447686885/in/photostream/');
+}
+
 a:link {
 	color: #707070;
 	text-decoration: none;
@@ -45,7 +49,11 @@ a:hover {
 }
 
 .space {
-	padding-top: 50px;
+	padding-top: 20px;
+}
+
+.space-bottom {
+	padding-bottom: 20px;
 }
 
 /* #Navigation Styles
@@ -81,11 +89,13 @@ a:hover {
 
 .navbar-fixed-wrapper {
 	background-color: #FFFCFE;
+	background: url('https://farm4.staticflickr.com/3858/14446563614_3c2acd7ea4_q.jpg');
 	position: absolute;
 	width: 100%;
 	height: 100px;
 	z-index: 1;
 	bottom: 0px;
+	box-shadow: 0 0 2px 0 #303030;
 }
 
 .nav-fixed {
@@ -161,6 +171,13 @@ a:hover {
 	color: #B99DCC;
 }
 
+.down {
+	font-size: 50px;
+	text-align: center;
+	padding: 80px 0 0 0;
+	color: #B99DCC;
+}
+
 /* #About Styles
 ================================================== */
 .headshot {
@@ -173,10 +190,9 @@ a:hover {
 }
 
 .info p {
-	font-size: 28px;
-	line-height: 36px;
+	font-size: 22px;
+	line-height: 34px;
 	color: #000;
-	text-align: justify;
 }
 
 /* #Contact Styles

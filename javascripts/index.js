@@ -1,7 +1,7 @@
 $().ready(function() {
 
  $(window).bind('scroll', function() {
-   var navHeight = $(window).height() - 100;
+   var navHeight = $(window).height() - 70;
      if ($(window).scrollTop() > navHeight) {
        $('.nav').removeClass('nav-opacity').removeClass('nav-right').removeClass('navbar');
        $('.nav').addClass('fixed').addClass('navbar-fixed-wrapper');
@@ -14,6 +14,14 @@ $().ready(function() {
       $('.nav-li-wrapper').addClass('nav-right').removeClass('nav-fixed');
        $('#nav-name').addClass('hidden');
      }
+  });
+
+
+  $('.down').click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $('#about').offset().top
+    }, 1000);
   });
 
   $('#nav-name').click(function(e) {
