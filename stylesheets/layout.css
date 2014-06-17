@@ -10,15 +10,18 @@
 /* Table of Content
 ==================================================
 	#Site Styles
+	#Navigation Styles
+	#Landing Styles
 	#Page Styles
+	#About Styles
+	#Contact Styles
 	#Media Queries
 	#Font-Face */
 
 /* #Site Styles
 ================================================== */
-
-body h1, h2, h3, h4, h5, h6, p, li {
-  font-family: 'Open Sans', sans-serif;
+body h1, h2, h3, h4, h5, h6, div, p, li {
+  font-family: 'Georgia', serif;
 }
 
 a:link {
@@ -28,17 +31,28 @@ a:link {
 
 a:hover {
 	color: #575757;
-	font-weight: 600;
+	text-decoration: underline;
 }
 
-.nav {
+.offset {
+  margin: 200px auto 0;
+  padding-top: 60px;
+}
+
+.offset-small {
+  margin: 100px auto 0;
+  padding-top: 60px;
+}
+
+/* #Navigation Styles
+================================================== */
+.navbar {
 	background-color: #b5b5b5;
-	padding: 15px;
 	position: absolute;
 	width: 100%;
-	height: 30px;
+	height: 100px;
 	z-index: 1;
-	bottom: 200px;
+	bottom: 0px;
 }
 
 .nav-opacity {
@@ -46,12 +60,13 @@ a:hover {
 }
 
 .nav-right {
+	margin: 0 auto;
 	text-align: center;
 }
 
 .nav-right li {
-	font-size: 22px;
-	padding: 5px 15px 15px 15px;
+	font-size: 24px;
+	padding: 35px 30px;
 	display: inline-block;
 	font-weight: 600;
 }
@@ -60,13 +75,48 @@ a:hover {
 	color: #242424;
 }
 
+.navbar-fixed-wrapper {
+	background-color: #FFFCFE;
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	z-index: 1;
+	bottom: 0px;
+}
+
+.nav-fixed {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nav-fixed li {
+	font-size: 18px;
+	padding: 10px 30px;
+	display: inline-block;
+}
+
+.nav-fixed li a {
+	color: #242424;
+}
+
 .fixed {
   position: fixed;
-  top: 0;
-  height: 30px;
+  top: 0px;
+  height: 70px;
   z-index: 1;
 }
 
+#nav-name {
+	font-size: 24px;
+	padding: 5px;
+}
+
+.hidden {
+	display: none;
+}
+
+/* #Landing Styles
+================================================== */
 .full-width {
 	/*background: url('https://farm4.staticflickr.com/3792/11821175215_61d8afec35_k.jpg');*/
 	background: url('https://farm4.staticflickr.com/3694/14114424629_909e6d09c7_k.jpg');
@@ -77,67 +127,58 @@ a:hover {
 	max-height: 1000px;
 }
 
-.container-top {
-	margin: 0 auto;
+.intro {
+	padding-top: 50px;
+	text-align: center;
 }
 
+.name {
+	color: #303030;
+	font-size: 180px;
+	line-height: 180px;
+	font-weight: 600;
+	position: absolute;
+	width: 100%;
+	bottom: -280px;
+	font-family: 'Stalemate', cursive;
+}
+
+.intro h3 {
+	font-size: 42px;
+	line-height: 58px;
+	color: #242424;
+	font-weight: 500;
+}
+
+.star {
+	font-size: 50px;
+	text-align: center;
+	padding: 80px 0 0 0;
+}
+
+/* #About Styles
+================================================== */
 .headshot {
 	border-radius: 50%;
 	box-shadow: 0 0 5px #303030;
 }
 
 .headshot-wrapper {
-	padding: 10px 15px;
-}
-
-.intro {
-	padding-top: 50px;
-}
-
-.intro h2 {
-	/*padding: 50px 50px 50px 15px;*/
-	padding: 50px;
-	font-size: 72px;
-	color: #242424;
-	text-align: center;
-	font-weight: 600;
-}
-
-.intro h3 {
-	text-align: justify;
-	font-size: 46px;
-	line-height: 58px;
-	color: #242424;
-	font-weight: 600;
+	padding: 10px 15px 25px 15px;
 }
 
 .info p {
 	font-size: 28px;
-	line-height: 34px;
+	line-height: 36px;
 	color: #000;
 	text-align: justify;
 }
 
-.offset {
-	margin: 200px auto;
-	padding-top: 60px;
-}
-
-.offset-projects {
-  margin: 200px auto 0;
-  padding-top: 60px;
-}
-
-.space {
-	margin-top: 50px;
-}
-
+/* #Contact Styles
+================================================== */
 .contact-info p {
 	font-size: 22px;
 }
-
-/* #Page Styles
-================================================== */
 
 /* #Mobile Styles
 ================================================== */
@@ -147,40 +188,75 @@ a:hover {
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
+		.full-width {
+			background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_b.jpg');
+			background-size: cover;
+			margin: 0 auto;
+			height: 100vh;
+			max-height: 1000px;
+		}
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.full-width {
+			background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_b.jpg');
+			background-size: cover;
+			margin: 0 auto;
+			height: 100vh;
+		}
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-		.intro {
-			padding-top: 100px;
+		.full-width {
+			background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_c.jpg');
+			background-size: cover;
+			margin: 0 auto;
+			height: 100vh;
 		}
 
-		.intro h2 {
-			padding: 50px 50px 50px 15px;
-			font-size: 52px;
-			line-height: 58px;
+		.intro {
+			padding-top: 50px;
+		}
+
+		.name {
 			color: #242424;
-			text-align: center;
+			font-size: 52px;
+			line-height: 55px;
+			font-weight: 800;
+			position: absolute;
+			width: 100%;
+			bottom: -100px;
 		}
 
 		.intro h3 {
-			font-size: 36px;
-			line-height: 42px;
+			font-size: 26px;
+			line-height: 26px;
 			color: #242424;
 		}
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.full-width {
+			background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_c.jpg');
+			background-size: cover;
+			margin: 0 auto;
+			height: 100vh;
+		}
 	}
 
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
+		.full-width {
+			background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833.jpg');
+			background-size: cover;
+			margin: 0 auto;
+			height: 100vh;
+		}
+
 		.nav {
 			display: none;
 		}

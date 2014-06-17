@@ -1,19 +1,22 @@
 $().ready(function() {
 
  $(window).bind('scroll', function() {
-   var navHeight = $(window).height() - 250;
+   var navHeight = $(window).height() - 100;
      if ($(window).scrollTop() > navHeight) {
-       $('.nav').addClass('fixed');
-       $('.nav').removeClass('nav-opacity');
+       $('.nav').removeClass('nav-opacity').removeClass('nav-right').removeClass('navbar');
+       $('.nav').addClass('fixed').addClass('navbar-fixed-wrapper');
+       $('.nav-li-wrapper').removeClass('nav-right').addClass('nav-fixed');
+       $('#nav-name').removeClass('hidden');
      }
      else {
-       $('.nav').removeClass('fixed');
-       $('.nav').addClass('nav-opacity');
-
+      $('.nav').removeClass('fixed').removeClass('nav-fixed').removeClass('navbar-fixed-wrapper');
+      $('.nav').addClass('nav-opacity').addClass('navbar');
+      $('.nav-li-wrapper').addClass('nav-right').removeClass('nav-fixed');
+       $('#nav-name').addClass('hidden');
      }
   });
 
-  $('#name').click(function(e) {
+  $('#nav-name').click(function(e) {
     e.preventDefault();
     $('html, body').animate({
       scrollTop: $('.full-width').offset().top
