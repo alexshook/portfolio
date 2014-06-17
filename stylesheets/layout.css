@@ -18,7 +18,7 @@
 ================================================== */
 
 body h1, h2, h3, h4, h5, h6, p, li {
-  font-family: 'Georgia', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a:link {
@@ -31,13 +31,12 @@ a:hover {
 }
 
 .navbar {
-	background-color: #FFF;
+	background-color: #575757;
 	padding: 5px 15px;
 	position: fixed;
 	height: 50px;
 	width: 100%;
 	z-index: 1;
-	border-bottom: 1px #000 solid;
 }
 
 .nav-left {
@@ -45,9 +44,10 @@ a:hover {
 	float: left;
 }
 
-.nav-left h2 {
-	font-size: 28px;
+.nav-left h2 a {
+	font-size: 32px;
 	padding: 5px;
+	color: #d4d4d4;
 }
 
 .nav-right {
@@ -58,8 +58,24 @@ a:hover {
 
 .nav-right li {
 	font-size: 22px;
-	padding: 15px 15px 0 15px;
+	padding: 14px 15px 0 15px;
 	display: inline-block;
+}
+
+.nav-right li a {
+	color: #d4d4d4;
+}
+
+.full-width {
+	background: url('https://farm4.staticflickr.com/3792/11821175215_61d8afec35_k.jpg');
+	background-size: cover;
+	margin: 0 auto;
+	height: 900px;
+	max-height: 1000px;
+}
+
+.container-top {
+	margin: 0 auto;
 }
 
 .headshot {
@@ -72,18 +88,20 @@ a:hover {
 }
 
 .intro {
-	padding-top: 125px;
+	padding-top: 250px;
 }
 
 .intro h2 {
 	padding: 50px 50px 50px 15px;
-	font-size: 58px;
-	line-height: 58px;
+	font-size: 72px;
+	line-height: 80px;
+	color: #FFF;
 }
 
-.info h3 {
-	font-size: 36px;
-	line-height: 38px;
+.intro h3 {
+	font-size: 44px;
+	line-height: 48px;
+	color: #FFF;
 }
 
 .info p {
@@ -117,13 +135,9 @@ a:hover {
 /* #Mobile Styles
 ================================================== */
 .navbar-mobile {
-	margin: 0 auto;
 	padding: 5px;
-	border-bottom: 1px #000 solid;
-}
-
-.navbar-mobile #name {
-	font-size: 22px;
+	background-color: #575757;
+	width: 100%;
 }
 
 .navbar-mobile li {
@@ -132,6 +146,11 @@ a:hover {
 	line-height: 2;
 	display: inline;
 	padding: 15px 5px;
+	color: #d4d4d4;
+}
+
+.navbar-mobile li a {
+	color: #d4d4d4;
 }
 
 /* #Media Queries
@@ -145,7 +164,7 @@ a:hover {
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-				.navbar {
+		.navbar {
 			display: none;
 		}
 		.navbar-mobile {
@@ -164,7 +183,14 @@ a:hover {
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.navbar {
+			display: none;
+		}
+		.navbar-mobile {
+			display: inline-block;
+		}
+	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
