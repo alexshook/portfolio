@@ -21,11 +21,11 @@
 /* #Site Styles
 ================================================== */
 body h1, h2, h3, h4, h5, h6, div, p, li {
-  font-family: 'Georgia', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 body {
-	background: url('https://www.flickr.com/photos/als304/14447686885/in/photostream/');
+	/*background: url('https://farm4.staticflickr.com/3877/14467851113_9694524684_m.jpg');*/
 }
 
 a:link {
@@ -56,6 +56,10 @@ a:hover {
 	padding-bottom: 20px;
 }
 
+.letter-space {
+	letter-spacing: 4px;
+}
+
 /* #Navigation Styles
 ================================================== */
 .navbar {
@@ -81,6 +85,7 @@ a:hover {
 	padding: 35px 30px;
 	display: inline-block;
 	font-weight: 600;
+	letter-spacing: 5px;
 }
 
 .nav-right li a {
@@ -95,7 +100,7 @@ a:hover {
 	height: 100px;
 	z-index: 1;
 	bottom: 0px;
-	box-shadow: 0 0 2px 0 #303030;
+	box-shadow: 0 0 1px 0 #ededed;
 }
 
 .nav-fixed {
@@ -107,6 +112,7 @@ a:hover {
 	font-size: 18px;
 	padding: 10px 30px;
 	display: inline-block;
+	letter-spacing: 2px;
 }
 
 .nav-fixed li a {
@@ -123,6 +129,7 @@ a:hover {
 #nav-name {
 	font-size: 24px;
 	padding: 5px;
+	letter-spacing: 3px;
 }
 
 .hidden {
@@ -133,8 +140,9 @@ a:hover {
 ================================================== */
 .full-width {
 	/*background: url('https://farm4.staticflickr.com/3792/11821175215_61d8afec35_k.jpg');*/
-	background: url('https://farm4.staticflickr.com/3694/14114424629_909e6d09c7_k.jpg');
+	/*background: url('https://farm4.staticflickr.com/3694/14114424629_909e6d09c7_k.jpg');*/
 	/*background: url('https://farm4.staticflickr.com/3742/14278381406_4f3172d1b9_k.jpg');*/
+	background: url('https://farm6.staticflickr.com/5550/14300556794_722a6c8a85_k.jpg');
 	background-size: cover;
 	margin: 0 auto;
 	height: 100vh;
@@ -210,7 +218,8 @@ a:hover {
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
 		.full-width {
-			background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_b.jpg');
+			/*background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_b.jpg');*/
+			background: url('https://farm6.staticflickr.com/5550/14300556794_3049569615_b.jpg');
 			background-size: cover;
 			margin: 0 auto;
 			height: 100vh;
@@ -221,7 +230,8 @@ a:hover {
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 		.full-width {
-			background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_b.jpg');
+			/*background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_b.jpg');*/
+			background: url('https://farm6.staticflickr.com/5550/14300556794_3049569615_b.jpg');
 			background-size: cover;
 			margin: 0 auto;
 			height: 100vh;
@@ -231,7 +241,8 @@ a:hover {
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 		.full-width {
-			background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_c.jpg');
+			/*background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_c.jpg');*/
+			background: url('https://farm6.staticflickr.com/5550/14300556794_3049569615_c.jpg');
 			background-size: cover;
 			margin: 0 auto;
 			height: 100vh;
@@ -261,7 +272,8 @@ a:hover {
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 		.full-width {
-			background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_c.jpg');
+			/*background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_c.jpg');*/
+			background: url('https://farm6.staticflickr.com/5550/14300556794_3049569615_c.jpg');
 			background-size: cover;
 			margin: 0 auto;
 			height: 100vh;
@@ -272,7 +284,8 @@ a:hover {
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 		.full-width {
-			background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833.jpg');
+			/*background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833.jpg');*/
+			background: url('https://farm6.staticflickr.com/5550/14300556794_3049569615_z.jpg');
 			background-size: cover;
 			margin: 0 auto;
 			height: 100vh;
