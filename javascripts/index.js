@@ -1,7 +1,7 @@
 $().ready(function() {
 
   $(window).bind('scroll', function() {
-    var navHeight = $(window).height() - 70;
+    var navHeight = $(window).height() - 50;
     if ($(window).scrollTop() > navHeight) {
       $('.nav').removeClass('nav-opacity').removeClass('nav-links').removeClass('navbar');
       $('.nav').addClass('fixed').addClass('navbar-fixed-wrapper');
