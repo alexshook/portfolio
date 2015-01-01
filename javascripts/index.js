@@ -1,7 +1,9 @@
 $().ready(function() {
+  var calculateHeight = $(window).height() / 5;
+  var navHeight = $(window).height() - calculateHeight;
 
   $(window).bind('scroll', function() {
-    var navHeight = $(window).height() - 50;
+    var navHeight = $(window).height() - calculateHeight;
     if ($(window).scrollTop() > navHeight) {
       $('.nav').removeClass('nav-opacity').removeClass('nav-links').removeClass('navbar');
       $('.nav').addClass('fixed').addClass('navbar-fixed-wrapper');
@@ -10,6 +12,11 @@ $().ready(function() {
       $('.nav').removeClass('fixed').removeClass('nav-fixed').removeClass('navbar-fixed-wrapper');
       $('.nav').addClass('nav-opacity').addClass('navbar');
       $('.nav-li-wrapper').addClass('nav-links').removeClass('nav-fixed');
+    }
+    if ( ($(window).scrollTop() > navHeight) && ($(window).width() < 1199) ) {
+      $('.nav').addClass('hidden');
+    } else {
+      $('.nav').removeClass('hidden');
     }
   });
 

@@ -25,8 +25,8 @@ body h1, h2, h3, h4, h5, h6, div, p, li {
 }
 
 a:link {
-	color: #333;
-	text-decoration: none;
+	color: #000;
+	text-decoration: underline;
 }
 
 a:hover {
@@ -62,13 +62,14 @@ a:hover {
 
 /* #Navigation Styles
 ================================================== */
+
 .navbar {
 	background-color: #b5b5b5;
 	position: absolute;
 	width: 100%;
-	height: 100px;
+	height: 90px;
 	z-index: 1;
-	bottom: 0px;
+	bottom: 20vh;
 }
 
 .nav-opacity {
@@ -76,13 +77,12 @@ a:hover {
 }
 
 .nav-links {
-	margin: 0 auto;
 	text-align: center;
 }
 
 .nav-links li {
 	font-size: 24px;
-	padding: 35px 30px;
+	padding: 35px 20px;
 	display: inline-block;
 	font-weight: 600;
 	letter-spacing: 5px;
@@ -90,16 +90,14 @@ a:hover {
 
 .nav-links li a {
 	color: #242424;
+	text-decoration: none;
 }
 
 .navbar-fixed-wrapper {
-	background-color: #FFFCFE;
-	background: url('https://farm4.staticflickr.com/3858/14446563614_3c2acd7ea4_q.jpg');
 	position: absolute;
-	width: 100%;
+	width: 10%;
 	z-index: 1;
 	bottom: 0px;
-	box-shadow: 0 0 1px 0 #ededed;
 }
 
 .nav-fixed {
@@ -108,14 +106,16 @@ a:hover {
 }
 
 .nav-fixed li {
+	box-shadow: 0 0 1px 0 #ededed;
 	font-size: 18px;
 	padding: 15px 30px;
-	display: inline-block;
+	display: block;
 	letter-spacing: 2px;
 }
 
 .nav-fixed li a {
 	color: #242424;
+	text-decoration: none;
 }
 
 .fixed {
@@ -129,47 +129,43 @@ a:hover {
 	display: none;
 }
 
+.nav-name {
+	color: #303030;
+	font-size: 36px;
+	font-weight: 600;
+	font-family: 'Stalemate', cursive;
+}
+
 /* #Landing Styles
 ================================================== */
 .full-width {
-	/*background: url('https://farm4.staticflickr.com/3792/11821175215_61d8afec35_k.jpg');*/
-	/*background: url('https://farm4.staticflickr.com/3694/14114424629_909e6d09c7_k.jpg');*/
-	/*background: url('https://farm4.staticflickr.com/3742/14278381406_4f3172d1b9_k.jpg');*/
-	background: url('https://farm6.staticflickr.com/5550/14300556794_722a6c8a85_k.jpg');
+	background: url('../images/skyline1920.jpg');
 	background-size: cover;
-	margin: 0 auto;
-	height: 100vh;
-}
-
-.intro {
-	padding-top: 50px;
-	text-align: center;
-}
-
-.intro h3 {
-	font-size: 30px;
-	line-height: 50px;
-	color: #303030;
+	width: 100%;
+	height: 80vh;
 }
 
 .name {
 	color: #303030;
-	font-size: 180px;
-	line-height: 180px;
+	font-size: 100px;
+	line-height: 120px;
 	font-weight: 600;
-	position: absolute;
-	width: 100%;
-	bottom: -280px;
+	padding-left: 7%;
+	padding-top: 5%;
+	width: 0 auto;
 	font-family: 'Stalemate', cursive;
 }
 
-.down {
-	font-size: 50px;
-	text-align: center;
-	padding-top: 50px;
-	color: #B99DCC;
-	width: 100px;
-	margin: 0 auto;
+.name h3 {
+	font-size: 24px;
+	line-height: 34px;
+	color: #303030;
+}
+
+.short-intro {
+	padding-top: 5%;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 /* #About Styles
@@ -204,77 +200,130 @@ a:hover {
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
 		.full-width {
-			/*background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_b.jpg');*/
-			background: url('https://farm6.staticflickr.com/5550/14300556794_3049569615_b.jpg');
+			background: url('../images/skyline1024.jpg');
 			background-size: cover;
 			margin: 0 auto;
-			height: 100vh;
+			height: 80vh;
 			max-height: 1000px;
 		}
+
+		.navbar {
+			background-color: #b5b5b5;
+			position: absolute;
+			width: 100%;
+			height: 60px;
+			z-index: 1;
+			bottom: 20vh;
+		}
+
+		.nav-links li {
+			font-size: 18px;
+			padding: 10px 15px;
+			display: inline-block;
+			font-weight: 600;
+			letter-spacing: 5px;
+		}
+
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 		.full-width {
-			/*background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_b.jpg');*/
-			background: url('https://farm6.staticflickr.com/5550/14300556794_3049569615_b.jpg');
+			background: url('../images/skyline1024.jpg');
 			background-size: cover;
 			margin: 0 auto;
-			height: 100vh;
+			height: 80vh;
 		}
+
+		.navbar {
+			background-color: #b5b5b5;
+			position: absolute;
+			width: 100%;
+			height: 60px;
+			z-index: 1;
+			bottom: 20vh;
+		}
+
+		.nav-links li {
+			font-size: 18px;
+			padding: 20px 15px;
+			display: inline-block;
+			font-weight: 600;
+			letter-spacing: 5px;
+		}
+
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 		.full-width {
-			/*background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_c.jpg');*/
-			background: url('https://farm6.staticflickr.com/5550/14300556794_3049569615_c.jpg');
+			background: url('../images/skyline768.jpg');
 			background-size: cover;
 			margin: 0 auto;
-			height: 100vh;
+			height: 80vh;
 		}
 
-		.intro {
-			padding-top: 50px;
+		.navbar {
+			background-color: #b5b5b5;
+			position: absolute;
+			width: 100%;
+			height: 60px;
+			z-index: 1;
+			bottom: 20vh;
+		}
+
+		.nav-links li {
+			font-size: 18px;
+			padding: 20px 15px;
+			display: inline-block;
+			font-weight: 600;
+			letter-spacing: 5px;
+		}
+
+		.nav-links li a {
+			color: #242424;
 		}
 
 		.name {
-			color: #242424;
-			font-size: 52px;
-			line-height: 55px;
-			font-weight: 800;
+			color: #303030;
+			font-size: 76px;
+			line-height: 82px;
+			font-weight: 600;
+			padding-left: 5%;
+			padding-top: 10%;
 			position: absolute;
-			width: 100%;
-			bottom: -100px;
+			width: 0 auto;
+			font-family: 'Stalemate', cursive;
 		}
 
-		.intro h3 {
-			font-size: 26px;
-			line-height: 26px;
-			color: #242424;
+		.name h3 {
+			font-size: 18px;
+			line-height: 22px;
+			color: #303030;
 		}
+
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 		.full-width {
-			/*background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833_c.jpg');*/
-			background: url('https://farm6.staticflickr.com/5550/14300556794_3049569615_c.jpg');
+			background: url('../images/skyline768.jpg');
 			background-size: cover;
 			margin: 0 auto;
-			height: 100vh;
+			height: 80vh;
 		}
-	}
 
+		.nav {
+			display: none;
+		}
+
+	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 		.full-width {
-			/*background: url('https://farm4.staticflickr.com/3694/14114424629_dca8ede833.jpg');*/
-			background: url('https://farm6.staticflickr.com/5550/14300556794_3049569615_z.jpg');
-			background-size: cover;
-			margin: 0 auto;
-			height: 100vh;
+			background: none;
+			height: 50vh;
 		}
 
 		.nav {
