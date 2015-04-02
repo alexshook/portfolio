@@ -151,6 +151,7 @@ a:hover {
 }
 
 .info p {
+	text-align: justify;
 	font-size: 22px;
 	line-height: 34px;
 	color: #000;
@@ -177,8 +178,10 @@ a:hover {
 			height: 100vh;
 		}
 
+	}
+
 	/* Smaller than standard 1824 (devices and browsers) */
-	@media only screen and (max-width: 1824px) {
+	@media only screen and (min-width: 1225px) and (max-width: 1824px) {
 		.full-width {
 			background: url('../images/skyline1824.jpg');
 			background-size: cover;
@@ -187,29 +190,16 @@ a:hover {
 			max-height: 1000px;
 		}
 
+	}
+
 	/* Smaller than standard 1224 (devices and browsers) */
-	@media only screen and (max-width: 1224px) {
+	@media only screen and (min-width: 960px) and (max-width: 1224px) {
 		.full-width {
 			background: url('../images/skyline1224.jpg');
 			background-size: cover;
 			margin: 0 auto;
 			height: 100vh;
 			max-height: 1000px;
-		}
-
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {
-		.full-width {
-			background: url('../images/skyline959.jpg');
-			background-size: cover;
-			margin: 0 auto;
-			height: 100vh;
-			max-height: 1000px;
-		}
-
-		.offset {
-		  margin: 60px auto 0;
-		  padding-top: 20px;
 		}
 
 	}
@@ -223,37 +213,9 @@ a:hover {
 			height: 100vh;
 		}
 
-		.nav-links li {
-			font-size: 18px;
-		}
-
-		.nav-fixed {
-			padding: 25px 15px;
-		}
-
-		.nav-fixed li a {
-			font-size: 18px;
-			display: inline-block;
-			font-weight: 600;
-			letter-spacing: 5px;
-		}
-
-		.fixed {
-		  position: fixed;
-		  top: 0px;
-		  height: 85px;
-		  z-index: 1;
-		}
-
-	}
-
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {
-		.full-width {
-			background: url('../images/skyline768.jpg') !important;
-			background-size: cover;
-			margin: 0 auto;
-			height: 100vh;
+		.offset {
+		  margin: 60px auto 0;
+		  padding-top: 20px;
 		}
 
 		.nav-links li {
@@ -289,6 +251,11 @@ a:hover {
 			height: 50vh;
 		}
 
+		.offset {
+		  margin: 25px auto 0;
+		  padding-top: 20px;
+		}
+
 		.nav-links li {
 			font-size: 18px;
 		}
@@ -320,6 +287,11 @@ a:hover {
 			background-size: cover;
 			margin: 0 auto;
 			height: 50vh;
+		}
+
+		.offset {
+		  margin: 20px auto 0;
+		  padding-top: 15px;
 		}
 
 		.name {
